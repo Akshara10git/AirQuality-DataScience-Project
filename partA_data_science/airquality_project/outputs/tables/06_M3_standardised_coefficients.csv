@@ -1,0 +1,12 @@
+feature,standardised_coef
+PT08.S2(NMHC),1.3033
+PT08.S1(CO),0.3028
+PT08.S3(NOx),0.2296
+T,-0.2022
+hour_sin,-0.0993
+PT08.S4(NO2),-0.0974
+AH,0.057
+PT08.S5(O3),0.0348
+RH,0.0239
+hour_cos,0.0155
+is_weekend,0.0111

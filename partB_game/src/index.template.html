@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070d14">
+<title>Machine Whisperer 3D · Night Shift</title>
+<style>
+/*CSS*/
+</style></head><body>
+<div id="world"></div>
+
+<header class="bar">
+  <div class="logo" aria-hidden="true">MW</div>
+  <div class="sector"><small id="sNo"></small><h1 id="sName"></h1></div>
+  <div class="bar-r">
+    <div class="tok" title="Log tokens left"><small>LOGS</small><div class="cells" id="tokCells"></div><b id="tokNum"></b></div>
+    <div class="pips" id="pips" title="Best rank on this sector"></div>
+    <button class="ibtn" id="bSnd" aria-label="Sound on/off"></button>
+    <button class="ibtn" id="bHelp" aria-label="Field manual"></button>
+  </div>
+</header>
+
+<div class="col-l" id="colL">
+  <section class="dispatch panel cut" id="dispatch">
+    <div class="dh"><span class="sig"><i></i><i></i><i></i><i></i></span><b>DISPATCH</b><small id="dStep"></small><button class="fold" id="dFold" aria-label="Collapse dispatch">&minus;</button></div>
+    <ol class="steps" id="steps"></ol>
+    <div class="dm" id="dm"></div>
+  </section>
+  <section class="readout panel cut" id="readout" hidden></section>
+</div>
+
+<aside class="console" id="rig">
+  <nav class="tabs" id="tabs">
+    <button data-t="data">DATA</button><button data-t="model">MODEL</button><button data-t="deploy">DEPLOY</button>
+  </nav>
+  <section class="pane panel cut" data-p="data">
+    <h3 class="ph"><i>01</i>DATA <em>logs from the rack</em></h3>
+    <p class="hint">Tap a cartridge on the back rack, or let the drone fetch a random batch. Every pull costs one token; the log reveals whether that machine failed.</p>
+    <button class="act" id="bPull5">FETCH 5 RANDOM LOGS</button>
+  </section>
+  <section class="pane panel cut" data-p="model">
+    <h3 class="ph"><i>02</i>MODEL <em>k-nearest neighbours</em></h3>
+    <div id="telem"></div>
+    <div id="dials"></div>
+  </section>
+  <section class="pane panel cut" data-p="deploy">
+    <h3 class="ph"><i>03</i>DEPLOY <em>test, then run the shift</em></h3>
+    <div class="duo"><button class="act" id="bVal" disabled>VALIDATE</button><button class="act hazard" id="bGo" disabled>DEPLOY SHIFT</button></div>
+  </section>
+</aside>
+
+<div id="flash" role="status"></div>
+<div id="modal"></div>
+<div id="wipe"><div class="wp"><small id="wLv"></small><h2 id="wTt"></h2><p id="wHt"></p></div></div>
+
+<script>/*THREE*/</script>
+<script>/*DATA*/</script>
+<script>/*LOGIC*/</script>
+<script>/*SCENE*/</script>
+<script>/*GAME*/</script>
+</body></html>

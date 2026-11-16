@@ -1,0 +1,7 @@
+# Optional: only needed to run the notebook and the tests.
+-r requirements.txt
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.4.0
+pytest==9.1.1
+# plus a notebook front end of your choice if you want to open it interactively, e.g.:  pip install jupyterlab
